@@ -1,4 +1,5 @@
-module.exports = function (api) {
+function extendConf(conf) {
+  conf.framework.iconSet = 'fontawesome-v5'
   conf.boot.push('~quasar-app-extension-stellar-forms/src/boot/i18n.js')
   conf.boot.push('~quasar-app-extension-stellar-forms/src/boot/vuelidate.js')
   conf.boot.push('~quasar-app-extension-stellar-forms/src/boot/vuelidate-mixins.js')
