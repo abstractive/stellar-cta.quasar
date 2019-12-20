@@ -6,3 +6,6 @@ function extendConf(conf) {
   conf.boot.push('~quasar-app-extension-stellar-forms/src/boot/register-forms.js')
   conf.build.transpileDependencies.push(/quasar-app-extension-stellar-forms[\\/]src/)
 }
+module.exports = function (api) {
+  api.extendQuasarConf(extendConf)
+}
