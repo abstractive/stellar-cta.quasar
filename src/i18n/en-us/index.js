@@ -1,19 +1,21 @@
 export default {
   coming_soon: 'Coming Soon',
-  error: {
-    sign_in: 'There was an error while trying to sign you in.',
-    submission: 'Your form submission failed.',
-    form_invalid: 'Please correct the errors in your form.'
-  },
-  success: {
-    submission: 'Submission Successful',
-    contact_asap: 'Stand by to receive a follow-up as soon as possible.',
-    JoiningWorkspace: 'Thank you for your request to join our {0} workspace.',
-    MakingCommitment: 'Thank you for your {0} commitment.',
-    Requesting: 'Thank you for your {0} request.',
-    ThanksFor: 'Thank you for your {0}.',
-    Sharing: 'Thank you for sharing your {0}.',
-    Subscribing: 'Thank you for your {0} subscription.'
+  dialogs: {
+    error: {
+      sign_in: 'There was an error while trying to sign you in.',
+      submission: 'Your form submission failed.',
+      form_invalid: 'Please correct the errors in your form.'
+    },
+    success: {
+      submission: 'Submission Successful',
+      contact_asap: 'Stand by to receive a follow-up as soon as possible.',
+      JoiningWorkspace: 'Thank you for your request to join our {0} workspace.',
+      MakingCommitment: 'Thank you for your {0} commitment.',
+      Requesting: 'Thank you for your {0} request.',
+      ThanksFor: 'Thank you for your {0}.',
+      Sharing: 'Thank you for sharing your {0}.',
+      Subscribing: 'Thank you for your {0} subscription.'
+    },
   },
   words: {
     GitLab: 'GitLab',

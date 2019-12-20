@@ -58,9 +58,9 @@ export default {
   methods: {
     afterSubmit (response) {
       this.acknowledgeSuccess(
-        'success.submission',
+        'dialogs.success.submission',
         [
-          ['success.Subscribing', ['words.announcement']]
+          ['dialogs.success.Subscribing', ['words.announcement']]
         ]
       )
     }

@@ -89,10 +89,10 @@ export default {
   methods: {
     afterSubmit (response) {
       this.acknowledgeSuccess(
-        'success.submission',
+        'dialogs.success.submission',
         [
-          ['success.MakingCommitment', ['words.contribution']],
-          'success.contact_asap'
+          ['dialogs.success.MakingCommitment', ['words.contribution']],
+          'dialogs.success.contact_asap'
         ]
       )
     }

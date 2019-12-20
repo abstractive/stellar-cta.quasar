@@ -25,7 +25,7 @@ export default ({ Vue, app }) => {
           this.$q.notify({
             color: 'negative',
             position: 'top',
-            message: this.$t('error.form_invalid'),
+            message: this.$t('dialogs.error.form_invalid'),
             icon: 'fas fa-exclamation-triangle'
           })
           return false
@@ -113,7 +113,7 @@ export default ({ Vue, app }) => {
               component.$q.notify({
                 color: 'negative',
                 position: 'top',
-                message: component.$t('error.submission'),
+                message: component.$t('dialogs.error.submission'),
                 icon: 'fas fa-exclamation-triangle'
               })
               console.warn(['failure', response])

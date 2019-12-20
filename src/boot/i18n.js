@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import messages from '../i18n'
-
+const merge = require('deepmerge')
 Vue.use(VueI18n)
 
 export default ({ app }) => {
@@ -12,22 +12,13 @@ export default ({ app }) => {
       messages
     })
   } else {
-    let combined = { 'en-us': app.i18n.messages['en-us'] }
-    console.info(["forms: i18n before", combined])
-    _.assign(combined['en-us'], messages['en-us'])
-    console.info(["forms: i18n during", combined])
-    //de Hard reset, since merge seems to fail.
+    let existing = { 'en-us': app.i18n.messages['en-us'] }
+    //de Hard reset, since app.i18n.mergeLocaleMessage seems to fail.
+    //de But allow application to override extension messages.
     app.i18n = new VueI18n({
       locale: 'en-us',
       fallbackLocale: 'en-us',
-      messages: combined
+      messages: merge(messages, existing)
     })
-    /*
-    app.i18n.mergeLocaleMessage({
-      locale: 'en-us',
-      messages
-    })
-    */
   }
-  console.info(["forms: i18n after", app.i18n])
 }

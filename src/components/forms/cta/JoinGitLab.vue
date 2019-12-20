@@ -71,10 +71,10 @@ export default {
   methods: {
     afterSubmit (response) {
       this.acknowledgeSuccess(
-        'success.submission',
+        'dialogs.success.submission',
         [
-          ['success.JoiningWorkspace', ['words.GitLab']],
-          'success.contact_asap'
+          ['dialogs.success.JoiningWorkspace', ['words.GitLab']],
+          'dialogs.success.contact_asap'
         ]
       )
     }

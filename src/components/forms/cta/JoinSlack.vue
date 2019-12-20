@@ -73,10 +73,10 @@ export default {
   methods: {
     afterSubmit (response) {
       this.acknowledgeSuccess(
-        'success.submission',
+        'dialogs.success.submission',
         [
-          ['success.JoiningWorkspace', ['words.Slack']],
-          'success.contact_asap'
+          ['dialogs.success.JoiningWorkspace', ['words.Slack']],
+          'dialogs.success.contact_asap'
         ]
       )
     }
