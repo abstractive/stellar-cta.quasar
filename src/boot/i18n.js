@@ -12,7 +12,7 @@ export default ({ app }) => {
       messages
     })
   } else {
-    combined = { 'en-us': app.i18n.getLocaleMessage('en-us') }
+    let combined = { 'en-us': app.i18n.getLocaleMessage('en-us') }
     _.assign(combined['en-us'], messages['en-us'])
     //de Hard reset, since merge seems to fail.
     app.i18n = new VueI18n({
