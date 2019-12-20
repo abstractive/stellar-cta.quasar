@@ -20,7 +20,7 @@ export default ({ app }) => {
     app.i18n = new VueI18n({
       locale: 'en-us',
       fallbackLocale: 'en-us',
-      combined
+      messages: combined
     })
     /*
     app.i18n.mergeLocaleMessage({
