@@ -1,5 +1,8 @@
 function extendConf(conf) {
+  conf.extras.push('fontawesome-v5')
   conf.framework.iconSet = 'fontawesome-v5'
+  conf.framework.plugins.push('Notify')
+  conf.framework.plugins.push('Dialog')
   conf.boot.push('~quasar-app-extension-stellar-forms/src/boot/i18n.js')
   conf.boot.push('~quasar-app-extension-stellar-forms/src/boot/lodash.js')
   conf.boot.push('~quasar-app-extension-stellar-forms/src/boot/vuelidate.js')
