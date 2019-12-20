@@ -1,3 +1,5 @@
+import Vue from 'vue'
+
 import StellarFormCard from '../components/forms/shared/FormCard.vue'
 import StellarCTASendMessage from '../components/forms/cta/SendMessage.vue'
 import StellarCTAShareTestimonial from '../components/forms/cta/ShareTestimonial.vue'
