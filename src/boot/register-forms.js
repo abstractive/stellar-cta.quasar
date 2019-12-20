@@ -1,6 +1,4 @@
-import StellarFormCard from 'components/shared/FormCard.vue'
-import StellarFormDialog from 'components/shared/FormDialog.vue'
-
+import StellarFormCard from 'components/forms/shared/FormCard.vue'
 import StellarCTASendMessage from '../components/forms/cta/SendMessage.vue'
 import StellarCTAShareTestimonial from '../components/forms/cta/ShareTestimonial.vue'
 import StellarCTAShareSuggestion from '../components/forms/cta/ShareSuggestion.vue'
@@ -24,8 +22,6 @@ import StellarCTASubscribeNewsletter from '../components/forms/cta/SubscribeNews
 //de TODO: Break apart as needed, into individual extensions?
 
 Vue.component('stellar-form-card', StellarFormCard)
-Vue.component('stellar-form-dialog', StellarFormDialog)
-
 Vue.component('stellar-cta-send-message', StellarCTASendMessage)
 Vue.component('stellar-cta-share-testimonial', StellarCTAShareTestimonial)
 Vue.component('stellar-cta-share-suggestion', StellarCTAShareSuggestion)
