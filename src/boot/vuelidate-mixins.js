@@ -1,6 +1,4 @@
-import { i18n } from 'boot/i18n'
-
-export default ({ Vue }) => {
+export default ({ Vue, app }) => {
   Vue.mixin({
     methods: {
 
@@ -8,7 +6,7 @@ export default ({ Vue }) => {
         let keys = this.$_.keys(field.$params)
         let message = []
         this.$_.each(keys, function (value) {
-          message.push(i18n.t('rules.' + value))
+          message.push(app.i18n.t('rules.' + value))
         })
         return this.$_.join(message, ' ')
       },
