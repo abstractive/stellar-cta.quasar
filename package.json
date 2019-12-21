@@ -1,7 +1,7 @@
 {
-  "name": "quasar-app-extension-stellar-forms",
+  "name": "quasar-app-extension-stellar",
   "version": "0.1.20",
-  "description": "Stellar forms and call-to-action suite.",
+  "description": "Digital presence foundation: Artillery+Quasar.",
   "author": "digitalextremist // <code@extremist.digital>",
   "license": "MIT",
   "main": "src/index.js",
@@ -10,9 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abstractive/stellar-forms.quasar"
+    "url": "https://github.com/abstractive/stellar.quasar"
   },
-  "bugs": "https://github.com/abstractive/stellar-forms.quasar/issues",
+  "bugs": "https://github.com/abstractive/stellar.quasar/issues",
   "homepage": "https://stellar.freed.network",
   "engines": {
     "node": ">= 8.9.0",

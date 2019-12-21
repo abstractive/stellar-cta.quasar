@@ -1,5 +1,17 @@
 export default {
+  presence: {
+    name: 'Stellar',
+    slogan: 'Digital Experience Reimagined',
+    copyright: {
+      name: 'abstractive labs',
+      link: '/'
+    }
+  },
   coming_soon: 'Coming Soon',
+  drawer: {
+    collapse: 'Collapse Sidebar',
+    expand: 'Expand Sidebar'
+  },
   dialogs: {
     error: {
       sign_in: 'There was an error while trying to sign you in.',
