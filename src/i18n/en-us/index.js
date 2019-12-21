@@ -1,3 +1,4 @@
+//de Defaults to be overriden in any presence.
 export default {
   presence: {
     name: 'Stellar',

@@ -1,7 +1,7 @@
 {
   "name": "quasar-app-extension-stellar",
-  "version": "0.1.20",
-  "description": "Digital presence foundation: Artillery+Quasar.",
+  "version": "0.2.0",
+  "description": "Digital presence foundation extension: Artillery+Quasar.",
   "author": "digitalextremist // <code@extremist.digital>",
   "license": "MIT",
   "main": "src/index.js",
