@@ -1,6 +1,6 @@
 {
   "name": "quasar-app-extension-stellar",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Digital presence foundation extension: Artillery+Quasar.",
   "author": "digitalextremist // <code@extremist.digital>",
   "license": "MIT",
@@ -23,6 +23,7 @@
     "axios": "^0.19.0",
     "deepmerge": "^4.2.2",
     "vue-i18n": "^8.15.3",
-    "vuelidate": "^0.7.4"
+    "vuelidate": "^0.7.4",
+    "yaml": "^1.7.2"
   }
 }

@@ -6,6 +6,7 @@
       show-if-above
       v-model="showDrawer"
       :breakpoint="500"
+      class='drawer-overlay'
       content-class="bg-grey-4">
         <q-list highlight link>
           <template v-for='option in options'>
@@ -93,3 +94,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.drawer-overlay {
+  z-index: 9;
+}
+</style>
