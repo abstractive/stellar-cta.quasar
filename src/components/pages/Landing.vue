@@ -8,7 +8,7 @@
             :class='button_class'
             :icon-right="button_icon"
             :color='button_color'
-            @click='scrollToElement(target)'
+            @click='scrollChoice(target)'
             :label='button_label'>
           </q-btn>
         </div>
@@ -40,6 +40,17 @@ export default {
     button_icon: {
       type: String,
       default: 'fas fa-caret-down'
+    }
+  },
+  methods: {
+    scrollChoice(target) {
+      switch(target) {
+        case 'page':
+          this.scrollOnePage()
+          break
+        default:
+          this.scrollToElement(target)
+      }
     }
   }
 }
