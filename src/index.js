@@ -13,6 +13,7 @@ function extendConf(conf) {
   conf.boot.push('~quasar-app-extension-stellar/src/boot/stellar/register-drawers.js')
   conf.boot.push('~quasar-app-extension-stellar/src/boot/stellar/register-dialogs.js')
   conf.boot.push('~quasar-app-extension-stellar/src/boot/stellar/register-toolbars.js')
+  conf.boot.push('~quasar-app-extension-stellar/src/boot/stellar/register-elements.js')
   conf.boot.push('~quasar-app-extension-stellar/src/boot/stellar/register-pages.js')
   conf.build.transpileDependencies.push(/quasar-app-extension-stellar[\\/]src/)
 }
