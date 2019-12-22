@@ -1,7 +1,7 @@
 <template>
   <div>
     <q-page class="stellar-landing full-height full-width fluid justify-center text-center column q-pa-lg"
-      :style="{ "background-image" : `url('${background}')` }">
+      :style="{ backgroundImage: `url('${background}')` }">
         <div class="text-center q-mb-md">
           <slot></slot>
           <q-btn v-if='button_enable' size=lg push clickable no-caps
@@ -50,7 +50,7 @@ export default {
   background-size: cover;
   width: 100%;
   height: 100%;
-  /* max-height: 100vh; */
+  max-height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
 }
