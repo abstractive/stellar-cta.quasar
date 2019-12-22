@@ -19,7 +19,7 @@ export default ({ Vue }) => {
         const container = document.getElementsByClassName('q-page-container')[0]
         const target = getScrollTarget(container)
         const duration = 300
-        setScrollPosition(target, target.innerHeight, duration)
+        setScrollPosition(target, target.innerHeight - target.screenY, duration)
       }
     }
   })
