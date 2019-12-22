@@ -15,7 +15,7 @@
             </template>
             <template v-else>
               <q-item v-bind:key='option.label'
-                clickable class='q-my-md'
+                clickable class='q-my-sm'
                 v-bind='routeOption(option)'
                 v-on:click='clickOption(option)'>
                 <q-item-section side avatar>
@@ -37,7 +37,7 @@
           <q-separator />
           <q-item clickable
             @click.capture='toggleSidebar'>
-            <q-item-section class='q-my-md' side avatar>
+            <q-item-section class='q-my-sm' side avatar>
               <q-icon class='text-grey-6'
                 :name='(!fullDrawer) ? "fas fa-chevron-right" : "fas fa-chevron-left"' />
             </q-item-section>
