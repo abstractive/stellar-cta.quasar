@@ -45,7 +45,7 @@ export default {
   methods: {
     scrollChoice(target) {
       switch(target) {
-        case 'page':
+        case 'one-page':
           this.scrollOnePage()
           break
         default:
