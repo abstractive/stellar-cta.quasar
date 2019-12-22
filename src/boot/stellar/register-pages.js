@@ -14,12 +14,6 @@ export default ({ Vue }) => {
         const offset = el.offsetParent.offsetTop - offsetY
         const duration = 300
         setScrollPosition(target, offset, duration)
-      },
-      scrollOnePage () {
-        const container = document.getElementsByClassName('q-page-container')[0]
-        const target = getScrollTarget(container)
-        const duration = 300
-        setScrollPosition(target, target.innerHeight - target.screenY, duration)
       }
     }
   })
