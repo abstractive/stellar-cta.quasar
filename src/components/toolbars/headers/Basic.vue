@@ -8,7 +8,7 @@
         <q-icon name="fas fa-bars" />
       </q-btn>
       <q-toolbar-title>
-        <q-btn size=lg no-caps flat type='a' class='cursor-pointer' to='/#'>
+        <q-btn size=lg no-caps flat type='a' class='cursor-pointer' to='/'>
           {{$t('presence.name')}}
         </q-btn>
       </q-toolbar-title>
@@ -17,10 +17,8 @@
 </template>
 
 <script>
-import { openURL } from 'quasar'
 export default {
   methods: {
-    openURL,
     toggleDrawer () {
       this.$store.dispatch('toggleDrawer')
     }

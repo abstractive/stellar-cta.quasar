@@ -2,7 +2,7 @@
   <div>
     <q-page class="stellar-landing full-height full-width fluid justify-center text-center column q-pa-lg"
       :style="{ backgroundImage: `url('${background}')` }">
-        <div class="text-center q-mb-md">
+        <div :class="container_class">
           <slot></slot>
           <q-btn v-if='button_enable' size=lg push clickable no-caps
             :class='button_class'
@@ -21,6 +21,10 @@ export default {
   props: {
     target: String,
     background: String,
+    container_class: {
+      type: String,
+      default: 'text-center'
+    },
     button_class: {
       type: String,
       default: 'text-left q-px-lg'
