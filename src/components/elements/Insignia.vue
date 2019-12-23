@@ -1,6 +1,6 @@
 <template>
   <q-img
-    @click="revealSignIn"
+    @click="openSignIn"
     class='cursor-pointer text-center'
     :src="insignia"
     spinner-color="white"
@@ -14,10 +14,5 @@
 <script>
 export default {
   props: ['insignia'],
-  methods: {
-    revealSignIn () {
-      this.$store.dispatch('showSignIn')
-    }
-  }
 }
 </script>
